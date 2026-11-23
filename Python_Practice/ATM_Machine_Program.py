@@ -18,8 +18,6 @@
 # # Hint: You can manage all this with data dictionary data type.
 
 
-
-
 class Banks:
 
     def __init__(self, BankName, ATMBalance,
@@ -156,9 +154,9 @@ class User:
         return True
 
 
-# ----------------------------------
+
 # Bank Users
-# ----------------------------------
+
 
 All_User = []
 
@@ -169,9 +167,9 @@ All_User.append(User("Meet", "BOI", 10000, 0, 1004, 123, 0))
 All_User.append(User("Rahul", "SBI", 6000, 0, 1005, 456, 0))
 
 
-# ----------------------------------
+
 # All Banks
-# ----------------------------------
+
 
 All_Banks = []
 
@@ -180,9 +178,9 @@ All_Banks.append(Banks("BOI", 3000000, 4, 80000, 30000))
 All_Banks.append(Banks("ICICI", 2000000, 3, 70000, 20000))
 
 
-# ----------------------------------
+
 # Main ATM Program
-# ----------------------------------
+
 
 while True:
 
@@ -200,9 +198,9 @@ while True:
         print("Please Enter Valid Choice")
         continue
 
-    # ----------------------------------
+    
     # Admin Option
-    # ----------------------------------
+    
 
     if user == 1:
 
@@ -339,9 +337,9 @@ while True:
         else:
             print("Invalid Admin Choice")
 
-    # ----------------------------------
+    
     # User Option
-    # ----------------------------------
+    
 
     elif user == 2:
 
@@ -371,9 +369,9 @@ while True:
 
         print("\nWelcome", Current_User.UserName)
 
-        # ----------------------------------
+        
         # User Menu
-        # ----------------------------------
+        
 
         while True:
 
@@ -390,9 +388,9 @@ while True:
                 print("Please Enter Valid Choice")
                 continue
 
-            # ----------------------------------
+
             # Withdraw Money
-            # ----------------------------------
+
 
             if Current_Choice == 1:
 
@@ -454,9 +452,9 @@ while True:
 
                     Current_Bank.ATMBalance -= User_Amount_To_WithDraw
 
-            # ----------------------------------
+
             # Deposit Money
-            # ----------------------------------
+
 
             elif Current_Choice == 2:
 
@@ -487,9 +485,9 @@ while True:
 
                 Current_User.Deposit(DepositMoney, Current_Bank)
 
-            # ----------------------------------
+
             # Account Details
-            # ----------------------------------
+
 
             elif Current_Choice == 3:
 
@@ -497,9 +495,9 @@ while True:
 
                 Current_User.User_Detail()
 
-            # ----------------------------------
+
             # Exit User Menu
-            # ----------------------------------
+
 
             elif Current_Choice == 4:
 
@@ -510,9 +508,9 @@ while True:
 
                 print("Invalid Choice")
 
-    # ----------------------------------
+    
     # Exit Program
-    # ----------------------------------
+    
 
     elif user == 3:
 
